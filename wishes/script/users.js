@@ -8,15 +8,14 @@ $urlParam = function(name){
     }
 	
 }
-console.log($urlParam('d')); 
-alert($urlParam('d')); 
+console.log($urlParam('u')); 
 
-var url = $urlParam('d');
-var modifiedUrl = url.replace('&m=1','').replace('','');
+var url = $urlParam('u');
+$modifiedUrl = url.replace('&m=1','&m=0','&').replace('','','');
 console.log(modifiedUrl);
 
 $(document).ready(function(){
-var name = modifiedUrl;
+var name = $modifiedUrl;
 $("#username").html(name);
 })
 	
