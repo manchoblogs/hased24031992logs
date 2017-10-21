@@ -12,5 +12,5 @@ console.log($urlParam(&#39;d&#39;));
 	});
 	
 var url = $urlParam(&#39;d&#39;);
-url = url.split('&')[0];
-alert(url);
+var modifiedUrl = url.replace('&m=1','').replace('','');
+console.log(modifiedUrl);
