@@ -11,7 +11,7 @@ $urlParam = function(name){
 console.log($urlParam('u')); 
 
 var url = $urlParam('u');
-$modifiedUrl = url.replace('&m=1','').replace('&m=0','');
+$modifiedUrl = url.replace('&m=1','').replace('&m=0','').replace('+','%20');
 console.log($modifiedUrl);
 
 jQuery(document).ready(function($){
