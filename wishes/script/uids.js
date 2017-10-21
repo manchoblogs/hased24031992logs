@@ -11,10 +11,10 @@ $urlParam = function(name){
 console.log($urlParam('u')); 
 
 var url = $urlParam('u');
-$modifiedUrl = url.replace('&m=1','&m=0','&').replace('','','');
+$modifiedUrl = url.replace('&m=1','').replace('&m=0','');
 console.log($modifiedUrl);
 
-$(document).ready(function(){
+jQuery(document).ready(function($){
 var name = $modifiedUrl;
 $("#username").html(name);
 })
