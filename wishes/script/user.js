@@ -11,6 +11,3 @@ console.log($urlParam(&#39;d&#39;));
 	$(&quot;#result&quot;).html(name);
 	});
 	
-var url = $urlParam(&#39;d&#39;);
-url = url.split('&')[0];
-alert(url);
